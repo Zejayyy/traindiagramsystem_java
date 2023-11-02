@@ -1,0 +1,23 @@
+server:
+  port: 80
+
+
+spring:
+  dataSource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/railwaydiagram?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&AutoReconnect=true&serverTimezone=Asia/Shanghai
+      username: root
+      password: root
+  main:
+    allow-circular-references: true
+
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: t_
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+

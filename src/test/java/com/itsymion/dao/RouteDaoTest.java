@@ -1,0 +1,23 @@
+package com.itsymion.dao;
+
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+public class RouteDaoTest
+{
+
+
+    @Autowired
+    private IRouteDao routeDao;
+
+
+    @Test
+    void testgetid()
+    {
+
+
+    }
+}
